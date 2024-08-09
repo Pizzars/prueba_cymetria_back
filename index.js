@@ -16,8 +16,11 @@ app.use(express.json());
 
 // Configurar conexión MySQL
 const db = mysql.createConnection({
-  host: "localhost",
+  // host: 'localhost',
+  host: "d685.dinaserver.com",
+  // user: 'root', // Cambia esto por tu usuario MySQL
   user: "user_data_test", // Cambia esto por tu usuario MySQL
+  // password: '', // Cambia esto por tu contraseña MySQL
   password: "1234567890", // Cambia esto por tu contraseña MySQL
   database: "data_test",
 });
